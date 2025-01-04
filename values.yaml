@@ -8,3 +8,4 @@ jaeger:
   installPlanApproval: Automatic
   source: redhat-operators
   sourceNamespace: openshift-marketplace
+  startingCSV: jaeger-operator.v1.62.0-1

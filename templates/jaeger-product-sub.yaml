@@ -11,3 +11,4 @@ spec:
   name: {{ .Values.jaeger.name }}
   source: {{ .Values.jaeger.source }}
   sourceNamespace: {{ .Values.jaeger.sourceNamespace }}
+  startingCSV: {{ .Values.jaeger.startingCSV }}
