@@ -1,11 +1,10 @@
 # Default values for jaeger.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-jaeger:
-  name: jaeger-product
-  namespace: openshift-distributed-tracing 
+tempo:
   channel: stable
   installPlanApproval: Automatic
+  name: tempo-product
+  namespace: openshift-tempo-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: jaeger-operator.v1.62.0-1

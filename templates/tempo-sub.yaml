@@ -1,0 +1,13 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
+  name: {{ .Values.tempo.name }}
+  namespace: {{ .Values.tempo.namespace }}
+spec:
+  channel: {{ .Values.tempo.channel }}
+  installPlanApproval: {{ .Values.tempo.installPlanApproval }}
+  name: {{ .Values.tempo.name }}
+  source: {{ .Values.tempo.source }}
+  sourceNamespace: {{ .Values.tempo.sourceNamespace }}
