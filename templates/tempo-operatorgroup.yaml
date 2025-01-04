@@ -7,6 +7,5 @@ metadata:
     olm.providedAPIs: "TempoMonolithic.v1alpha1.tempo.grafana.com,TempoStack.v1alpha1.tempo.grafana.com"
 spec:
   upgradeStrategy: Default
-  targetNamespaces:
     - {{ .Values.tempo.namespace }}
 
